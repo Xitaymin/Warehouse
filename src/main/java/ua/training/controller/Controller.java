@@ -8,11 +8,10 @@ import static ua.training.view.View.*;
 
 public class Controller {
     private Scanner scanner = new Scanner(System.in);
+    private InputValidator validator = new InputValidator();
+    InputReader reader = new InputReader(scanner);
     private Product product;
     private ProductDTO productDTO = new ProductDTO();
-    private DateParser dateParser = new DateParser();
-    private InputValidator validator = new InputValidator();
-    InputReader reader = new InputReader(new Scanner(System.in));
 
     public void processUserInput() {
         showMessage(REQUEST_PRODUCT_NAME_INPUT);
@@ -21,8 +20,8 @@ public class Controller {
         productDTO.setManufacturer(reader.getText());
         showMessage(REQUEST_PRODUCT_QUANTITY_INPUT);
         productDTO.setQuantity(validator.getValidQuantityValue(reader));
-//        showMessage(REQUEST_MANUFACTURING_DATE);
-//        productDTO.setManufacturingDate(validator.getValidDate(reader));
+        showMessage(REQUEST_MANUFACTURING_DATE);
+        productDTO.setManufacturingDate(validator.getValidDate(reader));
 //        showMessage(REQUEST_SHELF_LIFE);
 //        productDTO.setShelfLife(validator.getValidPeriod(reader));
 //        showMessage(REQUEST_SUPPLIER_NAME);
