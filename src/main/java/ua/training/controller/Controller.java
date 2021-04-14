@@ -22,7 +22,7 @@ public class Controller {
         productDTO.setQuantity(validator.getValidQuantityValue(reader));
         showMessage(REQUEST_MANUFACTURING_DATE);
         productDTO.setManufacturingDate(validator.getValidDate(reader));
-//        showMessage(REQUEST_SHELF_LIFE);
+        showMessage(REQUEST_SHELF_LIFE);
 //        productDTO.setShelfLife(validator.getValidPeriod(reader));
 //        showMessage(REQUEST_SUPPLIER_NAME);
 //        productDTO.setSupplier(reader.getText());

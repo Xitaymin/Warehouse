@@ -9,6 +9,7 @@ public class View {
     public static final String REQUEST_MANUFACTURING_DATE = "Enter manufacturing date of the product in format yyyy-mm-dd.";
     public static final String INCORRECT_NUMBER_INPUT = "One of the entered values is not a number. Please,check and repeat input.";
     public static final String INCORRECT_DATE_INPUT = "The date doesn't exist. Please, check and repeat input.";
+    public static final String REQUEST_SHELF_LIFE = "Enter product shelf life in format: XXd or XXw or XXy. For example 4d means 4 days, 14w - 14 weeks, 5m - 5 month, 1y - one year.";
 
     public static void showMessage(String message) {
         System.out.println(message);
