@@ -55,12 +55,8 @@ public class Controller {
     organize input and output data:
 
     Get user String without validation
-    - get user input with product name as String
-    - get user input with product manufacturer as String
     - get user input with product supplier as String
 
-
-    - get user input with product quantity as int
     - get user input with shelf life and parse as Period
     - get user input with product manufacturing date and parse as LocalDate
     - get user input with manufacturer number and check that it contains only appropriate symbols
