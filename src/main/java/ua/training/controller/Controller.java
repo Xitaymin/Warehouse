@@ -14,30 +14,30 @@ public class Controller {
     private ProductDTO productDTO = new ProductDTO();
 
     public void processUserInput() {
-//        showMessage(REQUEST_PRODUCT_NAME_INPUT);
-//        productDTO.setName(reader.getText());
-//        showMessage(REQUEST_MANUFACTURER_NAME_INPUT);
-//        productDTO.setManufacturer(reader.getText());
+        showMessage(REQUEST_PRODUCT_NAME_INPUT);
+        productDTO.setName(reader.getText());
+        showMessage(REQUEST_MANUFACTURER_NAME_INPUT);
+        productDTO.setManufacturer(reader.getText());
         showMessage(REQUEST_PRODUCT_QUANTITY_INPUT);
         productDTO.setQuantity(validator.getQuantity(reader));
         showMessage(REQUEST_MANUFACTURING_DATE);
         productDTO.setManufacturingDate(validator.getDate(reader));
-//        showMessage(REQUEST_SHELF_LIFE);
-//        productDTO.setShelfLife(validator.getPeriod(reader));
-//        showMessage(REQUEST_SUPPLIER_NAME);
-//        productDTO.setSupplier(reader.getText());
-//        showMessage(REQUEST_MANUFACTURER_PHONE);
-//        productDTO.setManufacturerNumber(validator.getPhoneNumber(reader));
-//        showMessage(REQUEST_SUPPLIER_PHONE);
+        showMessage(REQUEST_SHELF_LIFE);
+        productDTO.setShelfLife(validator.getPeriod(reader));
+        showMessage(REQUEST_SUPPLIER_NAME);
+        productDTO.setSupplier(reader.getText());
+        showMessage(REQUEST_MANUFACTURER_PHONE);
+        productDTO.setManufacturerNumber(validator.getPhoneNumber(reader));
+        showMessage(REQUEST_SUPPLIER_PHONE);
 //        /*
 //        For case where manufacturer is supplier
 //         */
-//        productDTO.setManufacturerNumber(validator.getPhoneNumber(reader));
-//        showMessage(REQUEST_PRICE_INPUT);
-//        productDTO.setPrice(validator.getPrice(reader));
-//
-//        makeProductItemFromManufacturer();
-//        System.out.println(product.toString());
+        productDTO.setManufacturerNumber(validator.getPhoneNumber(reader));
+        showMessage(REQUEST_PRICE_INPUT);
+        productDTO.setPrice(validator.getPrice(reader));
+
+        makeProductItemFromManufacturer();
+        System.out.println(product.toString());
     }
 
     public void makeProductItemFromManufacturer() {
